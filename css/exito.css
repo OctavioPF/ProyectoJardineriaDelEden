@@ -1,0 +1,45 @@
+body{
+    background-color: #152921;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/* view x height, tomar el tamaño de la pantalla */
+    font-family: Dejavu Sans, Arial, Verdana, sans-serif ;
+}
+
+.content_exito a{
+    color: white;
+
+}
+h1{
+    box-sizing: border-box;
+    color: white;
+   
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.506px;
+    line-height: 56px;
+    margin-bottom: -12.42px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 27.6px;
+    overflow-wrap: break-word;
+    text-rendering: optimizelegibility;
+    word-break: break-word;
+    margin-bottom: 100px;
+}
+
+
+p{
+    color: white;
+    font-size: 21px;
+    font-size: italic;
+    letter-spacing: -0.063px;
+    font-weight: 400;
+    line-height: 32px;
+    text-rendering: optimizelegibility;
+    word-break: break-word;
+}

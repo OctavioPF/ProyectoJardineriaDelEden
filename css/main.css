@@ -1,0 +1,470 @@
+@import url('https://fonts.cdnfonts.com/css/cooper-hewitt-book');
+
+@font-face {
+  font-family: 'test_shneregular';
+  src: url('../fonts/testsohne-buch-webfont.woff2') format('woff2'),
+    url('../fonts/testsohne-buch-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'test_shnekursiv';
+  src: url('../fonts/testsohne-buchkursiv-webfont.woff2') format('woff2'),
+       url('../fonts/testsohne-buchkursiv-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'test_shneregular', Arial, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+
+.btn_muestrame {
+  padding: 15px;
+  background-color: #152921;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.gototop {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  width: 33px;
+  border: 1px solid rgb(192, 188, 188);
+  color: black;
+  background-color: rgb(197, 189, 189);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 90px;
+  right: 40px;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.whatsapp:hover {
+  border: 1px solid #90ee90;
+}
+
+.gototop:hover {
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* /* '''''''''''''''''''''''''''''''''''''''''''''''''''''''MENU''''''''''''''''''''''''''''''''''' */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  box-shadow: 0 0 2px black;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #152921;
+  ;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''HERO''''''''''''''''''''''''''''''''''' */
+.hero {
+  display: flex;
+  padding: 6rem;
+}
+
+.hero__left {
+  width: 50%;
+}
+
+.hero__right {
+  width: 50%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 930px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero__left {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .hero__right {
+    width: 100%;
+  }
+}
+
+.titulo {
+  font-family: Cooper BT, serif;
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-weight: 150px;
+  margin-bottom: 10px;
+  color: #152921;
+}
+
+.btn_muestrame {
+  padding: 15px;
+  background-color: #152921;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.btn_muestrame:hover {
+  background-color: white;
+  color: #152921;
+  border: 1px solid #152921;
+}
+
+
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''CARDS''''''''''''''''''''''''''''''''''' */
+.contenedor_tarjeta {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  padding: 10px;
+  /*   margin-top: -250px; */
+}
+
+.contenido_tarjeta {
+  padding: 15px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 2px rgb(134, 130, 130);
+}
+
+.img_tarjeta {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.img_tarjeta img {
+  border-radius: 3.5rem;
+}
+
+.btn_tarjetas {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background-color: #152921;
+  color: white;
+  font-size: 15px;
+  text-decoration: none !important;
+}
+
+
+.btn_tarjetas:hover {
+  background-color: white;
+  color: #152921;
+  /* #152921; */
+  border-radius: none;
+  border: 2px solid #152921;
+  ;
+}
+
+.tarjeta:hover {
+  box-shadow: 0 0 0.1px rgb(65, 63, 63);
+  background-color: lightgrey;
+}
+
+@media (max-width: 1000px) {
+
+  /* 600px */
+  .contenedor_tarjeta {
+    display: inherit;
+    height: auto;
+  }
+
+  .tarjeta {
+    margin-top: auto;
+  }
+
+}
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''CARDS  -ETIQUETAS ''''''''''''''''''''''''''''''''''' */
+.label_negro {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 2px;
+}
+
+.label_cafe {
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 2px;
+}
+
+
+.label_blanco {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 2px;
+}
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''MAPA''''''''''''''''''''''''''''''''''' */
+.map {
+  margin-bottom: 5rem;
+}
+
+.map iframe {
+  box-shadow: 1px -1px 46px -25px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -1px 46px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''CONTACTO''''''''''''''''''''''''''''''''''' */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-left: 400px;
+
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+    margin: auto;
+  }
+}
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''CONTACTO''''''''''''''''''''''''''''''''''' */
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #152921;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #243b33;
+}
+
+.container_form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: inherit;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.form__txtarea {
+  height: 200px;
+}
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''email enviado''''''''''''''''''''''''''''''''''' */
+
+
+
+
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''''''''FOOTER''''''''''''''''''''''''''''''''''' */
+
+footer {
+  margin-top: 50px;
+  background-color: #343a40;
+  height: 490px auto;
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  font-family: 'Cooper Hewitt Light', sans-serif;
+}
+
+footer p {
+  color: white;
+}
+
+.title_footer {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section_footer {
+  margin: 20px 30px 20px 20px;
+  padding: 30px;
+
+
+}
+
+.iconos_sociales {
+  justify-content: center;
+
+}
+
+.lista_iconos li {
+  margin: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.titulo {
+  font-family: 'Cooper Hewitt Book', sans-serif;
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-weight: 150px;
+  margin-bottom: 10px;
+  color: #152921;
+}
+
+
+@media (max-width: 1000px) {
+  /*  600px*/
+
+  footer {
+    display: inherit;
+    height: auto;
+    width: auto;
+  }
+
+
+}

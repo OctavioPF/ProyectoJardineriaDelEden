@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(to bottom, #262626, #000000);
+}
+
+
+.container{
+   
+width: 100vw;
+height: 100vh;
+display: grid;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.login {
+    width: 30vw;
+   background-color: white;
+   border-radius: 10px;
+  text-align: center;
+  position: relative;
+
+
+}
+
+.login__field {
+  width: 80%;
+ 
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin: 0 auto
+}
+.login__label {
+  color: gray;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 55px;
+  transform: translateY(20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.login__label--pw {
+  top: 60px;
+  left: 55px;
+  transform: translateY(20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.login__input:focus + .login__label--pw,
+.login__input:not(:placeholder-shown) + .login__label--pw
+{
+  transform: translateY(-20px) scale(0.8);
+  color: #152921;
+  transform-origin: top left;
+}
+
+.login__input:focus + .login__label,
+  .login__input:not(:placeholder-shown) + .login__label
+{
+  transform: translateY(-12px) scale(0.8);
+  color: #152921;
+  transform-origin: top left;
+}
+
+
+.login__input:focus {
+  border-bottom: 1px solid #152921;
+}
+
+
+.login__sign-up {
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.login__sign-up a {
+  color: #152921;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login__sign-up a:hover {
+  color: #152921;
+  text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .login {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 667px) {
+  .login {
+    width: 90vw;
+  }
+}

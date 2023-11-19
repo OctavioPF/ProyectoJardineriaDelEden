@@ -1,0 +1,158 @@
+#container{
+    max-width: 1000px;
+    padding: 5px;
+    margin: 10px auto;
+    height: auto;
+   
+       
+}
+
+#section{
+    border-top: 5px solid #152921;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    width: 900px;
+    float: left;
+/*     border: #152921 2px solid;
+ */}
+
+/* #sidebar{
+    background-color: #ffffff;
+    width: 290px ;
+    float: right;
+    padding: 15px;
+    margin: 10px auto;
+
+} */
+
+
+body{
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+
+}
+
+h1{
+    box-sizing: border-box;
+    color: rgb(41, 41, 41);
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.506px;
+    line-height: 56px;
+    margin-bottom: -12.42px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 27.6px;
+    overflow-wrap: break-word;
+    text-rendering: optimizelegibility;
+    word-break: break-word;
+   
+}
+
+
+p{
+    color: rgb(41, 41, 41);
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 21px;
+    font-size: italic;
+    letter-spacing: -0.063px;
+    font-weight: 400;
+    line-height: 32px;
+    text-rendering: optimizelegibility;
+    word-break: break-word;
+    
+}
+
+.info {
+  margin-bottom: 2rem;
+  margin-bottom: 8rem;
+}
+
+
+.responsive_img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    text-align: center;
+  }
+
+  sub {
+      color: gray;
+      font-size: medium;
+      text-align: justify;
+   
+  }
+
+   .lista{
+    font-family: inherit;
+    font-size: 100px;
+    padding: 12px;
+  }
+
+
+  li {
+      padding: 12px;
+      color: rgb(41, 41, 41);
+      font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 21px;
+      font-size: italic;
+      letter-spacing: -0.063px;
+      font-weight: 400;
+      line-height: 32px;
+      text-rendering: optimizelegibility;
+      word-break: break-word;
+  }
+
+
+  /*MEDIA QUERIES*/
+
+/*Para 980px o menos*/
+
+
+@media screen and (max-width: 980px) {
+  
+   #container {
+    /* width: 96%; */
+    width: auto;
+    
+  }
+
+  .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #section {
+  /*   width: 60%; */
+  width: auto;
+  }
+
+  #header {
+    height: auto;
+  }
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+
+
+
+    
+  }
+  
+
+  
+ 
+  
+  
+  
+
